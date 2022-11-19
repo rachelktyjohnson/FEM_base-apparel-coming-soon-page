@@ -10,7 +10,7 @@ body {
   background: linear-gradient(135deg, hsl(0deg, 0%, 100%), hsl(0deg, 100%, 98%));
   min-height: 100vh;
 }
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   body {
     display: grid;
     grid-template-columns: 10fr 8fr;
@@ -20,7 +20,7 @@ body {
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   header {
     margin: 65px 165px;
   }
@@ -37,7 +37,7 @@ header img {
   background-size: cover;
   background-position: center;
 }
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   .hero-image {
     background-image: url("images/hero-desktop.jpg");
     width: 100%;
@@ -47,9 +47,9 @@ header img {
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   main {
-    margin: 0 220px 0 165px;
+    margin: 0 0 0 10%;
   }
 }
 main .content {
@@ -57,7 +57,7 @@ main .content {
   padding: 0 30px;
   text-align: center;
 }
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   main .content {
     grid-row: 2/3;
     grid-column: 1/2;
@@ -76,7 +76,7 @@ main .content h1 {
   font-size: 2.7rem;
   letter-spacing: 10px;
 }
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   main .content h1 {
     letter-spacing: 15px;
     font-size: 3.5rem;
@@ -94,7 +94,7 @@ main .content p {
   line-height: 1.5;
   margin: 35px 0;
 }
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   main .content p {
     font-size: 0.8rem;
   }
@@ -118,7 +118,7 @@ main form label input {
   color: black;
   outline: 0;
 }
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   main form label input {
     padding: 17px 20px 14px;
     font-size: 0.9rem;
@@ -134,7 +134,7 @@ main form label .error-icon {
   top: 8px;
   height: 20px;
 }
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   main form label .error-icon {
     top: 15px;
   }
@@ -147,7 +147,7 @@ main form img.submit-button {
   box-shadow: 0 0 10px hsla(0deg, 36%, 70%, 0.7);
   z-index: 10;
 }
-@media (min-width: 600px) {
+@media (min-width: 500px) {
   main form img.submit-button {
     padding: 15px 40px;
     cursor: pointer;
