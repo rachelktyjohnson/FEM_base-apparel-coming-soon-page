@@ -16,11 +16,14 @@ body {
     grid-template-columns: 10fr 8fr;
     grid-template-rows: 150px 1fr;
     background-image: url("images/bg-pattern-desktop.svg");
+    background-size: cover;
   }
 }
 
-header {
-  margin: 65px 165px;
+@media (min-width: 600px) {
+  header {
+    margin: 65px 165px;
+  }
 }
 header img {
   height: 25px;
@@ -103,6 +106,7 @@ main form {
 }
 main form label {
   width: 100%;
+  position: relative;
 }
 main form label input {
   border-radius: 35px;
@@ -125,18 +129,39 @@ main form label input::placeholder {
 }
 main form label .error-icon {
   display: none;
+  position: absolute;
+  right: 50px;
+  top: 8px;
+  height: 20px;
 }
-main form img {
+@media (min-width: 600px) {
+  main form label .error-icon {
+    top: 15px;
+  }
+}
+main form img.submit-button {
   padding: 10px 20px;
   background: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
   border-radius: 35px;
   margin-left: -40px;
   box-shadow: 0 0 10px hsla(0deg, 36%, 70%, 0.7);
+  z-index: 10;
 }
 @media (min-width: 600px) {
-  main form img {
+  main form img.submit-button {
     padding: 15px 40px;
+    cursor: pointer;
   }
+  main form img.submit-button:hover {
+    box-shadow: 0 0 10px hsl(0deg, 36%, 70%);
+  }
+}
+main .hint {
+  font-size: 0.8rem;
+  color: hsl(0deg, 93%, 68%);
+  margin: 10px 20px;
+  display: none;
+  text-align: left;
 }
 
 /*# sourceMappingURL=styles.css.map */
